@@ -836,6 +836,42 @@ header h1 {
     padding: 20px 10px;
   }
 }
+@media (max-width: 576px) {
+  .sobre-texto {
+    padding: 0 15px;
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  .card-sobre {
+    padding: 20px 10px;
+  }
+
+  .contenedor-sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  .sobre-texto h2 {
+    font-size: 22px;
+  }
+
+  .sobre-texto p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
 
 
 
