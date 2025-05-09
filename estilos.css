@@ -853,31 +853,34 @@ html, body {
 
 @media (max-width: 768px) {
   #carouselExampleIndicators {
-    padding: 0 10px;
+    width: 100% !important;
+    padding: 0 10px !important;
     box-sizing: border-box;
+  }
+
+  #carouselExampleIndicators .carousel-inner {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   #carouselExampleIndicators .carousel-inner img {
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
+    max-height: 400px !important;
+    object-fit: cover !important;
+    border-radius: 10px;
     display: block;
     margin: 0 auto;
   }
 
-  .carousel-indicators {
-    bottom: 10px;
-  }
-
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    width: 30px;
-    height: 30px;
+    width: 30px !important;
+    height: 30px !important;
   }
 }
+
 
 
 
