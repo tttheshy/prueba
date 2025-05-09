@@ -732,386 +732,112 @@ header h1 {
   font-family: 'Segoe UI', sans-serif;
 }
 
-
-/* RESPONSIVE DESIGN */
-
-@media (max-width: 1200px) {
-  .trabajos-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
-  .sobre-texto h2 {
-    font-size: 40px;
-  }
-
-  .sobre-texto p {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 992px) {
-  .navegacion-header button {
-    padding: 8px 16px;
-    font-size: 15px;
-  }
-
-  .nombre-empresa {
-    font-size: 40px;
-  }
-
-  .sobre-texto h2 {
-    font-size: 36px;
-    text-align: center;
-  }
-
-  .sobre-texto p {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .sobre-img img {
-    margin: 0 auto;
-  }
-
-  .carousel-inner img {
-    height: 300px;
-  }
-
-  .trabajo-card img {
-    height: 350px;
-  }
-}
-
-@media (max-width: 768px) {
-  .contenedor-header,
-  .topbar-content {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .logo-titulo {
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .logo-titulo img {
-    height: 60px;
-  }
-
-  .nombre-empresa {
-    font-size: 32px;
-  }
-
-  .navegacion-header {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .tab-content,
-  .cta-contenido,
-  .card-sobre {
-    padding: 20px;
-  }
-
-  .sobre-texto h2 {
-    font-size: 32px;
-  }
-
-  .sobre-texto p {
-    font-size: 16px;
-  }
-
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .trabajo-card img {
-    height: 280px;
-  }
-}
-
+/* ==== RESPONSIVE SMARTPHONES ==== */
 @media (max-width: 576px) {
-  .topbar-content {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 10px;
+  body, html {
+    overflow-x: hidden;
   }
 
-  .logo img {
-    height: 40px;
-  }
-
-  .cta-contenido h2,
-  .sobre-texto h2,
-  #galeria h2,
-  #servicios h2 {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .cta-contenido p,
-  .sobre-texto p {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .navegacion-header button {
-    padding: 6px 12px;
-    font-size: 13px;
-  }
-
-  .trabajos-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .trabajo-card img {
-    height: 220px;
-  }
-
-  .carousel-inner img {
-    height: 200px;
-  }
-}
-
-@media (max-width: 991px) {
-  /* Header: logo y nombre más pequeños */
-  .logo-titulo img {
-    height: 60px;
-  }
-
-  .nombre-empresa {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  .navegacion-header {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .navegacion-header button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-
-  .redes-header {
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  header {
-    padding: 30px 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  /* Sección SOBRE NOSOTROS */
   .contenedor-sobre {
     flex-direction: column;
     text-align: center;
   }
 
+  .sobre-img img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .sobre-texto {
+    padding: 0 10px;
+    width: 100%;
+  }
+
   .sobre-texto h2 {
-    font-size: 28px;
+    font-size: 26px;
     text-align: center;
   }
 
   .sobre-texto p {
-    font-size: 16px;
+    font-size: 14px;
+    text-align: justify;
+    word-break: break-word;
   }
 
-  .sobre-img img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* CTA Agendar */
+  .tab-content,
+  .card-sobre,
   .cta-contenido {
-    padding: 30px 15px;
-    margin: 40px 10px;
+    padding: 20px 15px;
   }
 
-  .cta-contenido h2 {
-    font-size: 22px;
+  .trabajo-card img {
+    height: 200px;
   }
 
-  .cta-contenido p {
-    font-size: 14px;
-  }
-
-  .btn-agendar {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-
-  /* Galería */
   .gallery {
     grid-template-columns: 1fr;
   }
 
-  .gallery img {
-    height: auto;
-  }
-
-  /* Servicios */
-  .servicios-lista {
-    grid-template-columns: 1fr;
-  }
-
-  .servicio {
-    padding: 15px;
-  }
-
-  .servicio h3 {
-    font-size: 18px;
-  }
-
-  .servicio p {
-    font-size: 14px;
-  }
-
-  /* Contacto */
-  .contacto-contenedor {
-    grid-template-columns: 1fr;
-  }
-
-  .trabajo-card {
-    max-width: 100%;
-  }
-
-  .trabajo-card img {
-    height: auto;
-  }
-
-  /* Carrusel */
-  .carousel-inner img {
-    height: 220px;
-    object-fit: cover;
-  }
-}
-
-@media (max-width: 480px) {
-  .nombre-empresa {
-    font-size: 24px;
+  .navegacion-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 
   .navegacion-header button {
+    padding: 6px 10px;
     font-size: 13px;
-    padding: 6px 12px;
   }
 
   .topbar-content {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
   }
 
-  .sobre-texto p {
-    font-size: 15px;
+  .nombre-empresa {
+    font-size: 28px;
   }
 
-  .sobre-texto h2 {
-    font-size: 24px;
+  .logo-titulo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-titulo img {
+    height: 55px;
+  }
+
+  .carousel-inner img {
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .cta-contenido h2,
+  #galeria h2,
+  #servicios h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .cta-contenido p,
+  .trabajo-card p {
+    font-size: 14px;
+  }
+
+  .trabajo-card h3 {
+    font-size: 16px;
   }
 
   .trabajos-grid {
     grid-template-columns: 1fr;
     padding: 20px 10px;
   }
-
-  .card-sobre {
-    padding: 25px 15px;
-  }
-
-  footer {
-    font-size: 13px;
-    padding: 10px;
-  }
 }
 
-/* Asegura que el body no tenga scroll lateral */
-body {
-  overflow-x: hidden;
-}
 
-/* Evita que imágenes grandes generen desbordes */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Mejora la usabilidad de los botones en móviles */
-button, .btn-agendar {
-  font-size: 16px;
-  padding: 12px 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Mejora espaciado en tarjetas */
-.trabajo-card {
-  margin: 0 auto;
-  width: 100%;
-}
-
-/* Centra y reduce texto del header */
-header h1, .nombre-empresa {
-  font-size: 24px;
-  line-height: 1.2;
-  text-align: center;
-}
-
-/* Asegura que la navegación no se corte */
-.navegacion-header {
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.navegacion-header button {
-  width: 100%;
-  font-size: 16px;
-}
-
-/* Reduce tamaño del carrusel */
-.carousel-inner img {
-  height: 200px;
-  object-fit: cover;
-}
-
-/* Ajusta el contenedor general de contenido */
-main, .tab-content {
-  padding: 10px;
-}
-
-/* Evita que el topbar se amontone */
-.topbar-content {
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  text-align: center;
-}
-
-@media (max-width: 480px) {
-  .sobre-texto {
-    padding: 0 16px; /* agrega espacio lateral para evitar desbordamiento */
-    text-align: justify;
-  }
-
-  .sobre-texto h2 {
-    font-size: 28px; /* más pequeño para iPhone */
-    text-align: center;
-  }
-
-  .sobre-texto p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .card-sobre {
-    padding: 30px 10px;
-  }
-}
 
 
 
