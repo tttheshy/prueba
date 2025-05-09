@@ -407,12 +407,7 @@ header h1 {
 }
 
 /* Imágenes del carrusel */
-.carousel-inner img {
-  width: 100%;
-  border-radius: 0;
-  object-fit: cover;
-  height: auto;
-}
+
 
 /* Indicadores redondos y modernos */
 .carousel-indicators li {
@@ -853,14 +848,9 @@ html, body {
 
 @media (max-width: 768px) {
   #carouselExampleIndicators {
-    width: 100% !important;
-    padding: 0 10px !important;
+    margin: 0 auto;
+    padding: 0 10px;
     box-sizing: border-box;
-  }
-
-  #carouselExampleIndicators .carousel-inner {
-    width: 100% !important;
-    max-width: 100% !important;
   }
 
   #carouselExampleIndicators .carousel-inner img {
@@ -869,18 +859,11 @@ html, body {
     height: auto !important;
     max-height: 400px !important;
     object-fit: cover !important;
-    border-radius: 10px;
+    border-radius: 12px;
     display: block;
     margin: 0 auto;
   }
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    width: 30px !important;
-    height: 30px !important;
-  }
 }
-
 
 
 
