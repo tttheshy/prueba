@@ -873,6 +873,163 @@ header h1 {
   }
 }
 
+@media (max-width: 991px) {
+  /* Header: logo y nombre más pequeños */
+  .logo-titulo img {
+    height: 60px;
+  }
+
+  .nombre-empresa {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .navegacion-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navegacion-header button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .redes-header {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  header {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Sección SOBRE NOSOTROS */
+  .contenedor-sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-texto h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .sobre-texto p {
+    font-size: 16px;
+  }
+
+  .sobre-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* CTA Agendar */
+  .cta-contenido {
+    padding: 30px 15px;
+    margin: 40px 10px;
+  }
+
+  .cta-contenido h2 {
+    font-size: 22px;
+  }
+
+  .cta-contenido p {
+    font-size: 14px;
+  }
+
+  .btn-agendar {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* Galería */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: auto;
+  }
+
+  /* Servicios */
+  .servicios-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .servicio {
+    padding: 15px;
+  }
+
+  .servicio h3 {
+    font-size: 18px;
+  }
+
+  .servicio p {
+    font-size: 14px;
+  }
+
+  /* Contacto */
+  .contacto-contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .trabajo-card {
+    max-width: 100%;
+  }
+
+  .trabajo-card img {
+    height: auto;
+  }
+
+  /* Carrusel */
+  .carousel-inner img {
+    height: 220px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 480px) {
+  .nombre-empresa {
+    font-size: 24px;
+  }
+
+  .navegacion-header button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .topbar-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sobre-texto p {
+    font-size: 15px;
+  }
+
+  .sobre-texto h2 {
+    font-size: 24px;
+  }
+
+  .trabajos-grid {
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+  }
+
+  .card-sobre {
+    padding: 25px 15px;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+
 
 
 
