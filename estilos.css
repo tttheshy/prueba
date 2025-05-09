@@ -797,22 +797,6 @@ html, body {
     text-align: center;
   }
 
-@media (max-width: 768px) {
-  #carouselExampleIndicators {
-    margin: 0 auto;
-    padding: 0 10px; /* espacio a los lados */
-    box-sizing: border-box;
-  }
-
-  .carousel-inner img {
-    width: 100%;
-    max-width: 100%;
-    max-height: 400px; /* aumentamos el tamaño */
-    object-fit: cover; /* mantiene estética */
-    border-radius: 12px;
-  }
-}
-
 
   .cta-contenido h2 {
     font-size: 22px;
@@ -867,7 +851,21 @@ html, body {
   line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+  #carouselExampleIndicators {
+    margin: 0 auto;
+    padding: 0 10px; /* espacio a los lados */
+    box-sizing: border-box;
+  }
 
+  .carousel-inner img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 400px; /* aumentamos el tamaño */
+    object-fit: cover; /* mantiene estética */
+    border-radius: 12px;
+  }
+}
 
 
 
