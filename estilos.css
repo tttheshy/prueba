@@ -1092,6 +1092,32 @@ main, .tab-content {
   text-align: center;
 }
 
+@media (max-width: 480px) {
+  .sobre-texto {
+    padding: 0 16px; /* agrega espacio lateral para evitar desbordamiento */
+    text-align: justify;
+  }
+
+  .sobre-texto h2 {
+    font-size: 28px; /* más pequeño para iPhone */
+    text-align: center;
+  }
+
+  .sobre-texto p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .card-sobre {
+    padding: 30px 10px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
 
 
 
