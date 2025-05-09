@@ -732,150 +732,68 @@ header h1 {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* ==== RESPONSIVE SMARTPHONES ==== */
-@media (max-width: 576px) {
-  body, html {
-    overflow-x: hidden;
-  }
 
-  .contenedor-sobre {
-    flex-direction: column;
-    text-align: center;
-  }
+/* 👇 Ajustes con clamp para que el sitio sea totalmente responsive sin romper en móviles */
 
-  .sobre-img img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .sobre-texto {
-    padding: 0 10px;
-    width: 100%;
-  }
-
-  .sobre-texto h2 {
-    font-size: 26px;
-    text-align: center;
-  }
-
-  .sobre-texto p {
-    font-size: 14px;
-    text-align: justify;
-    word-break: break-word;
-  }
-
-  .tab-content,
-  .card-sobre,
-  .cta-contenido {
-    padding: 20px 15px;
-  }
-
-  .trabajo-card img {
-    height: 200px;
-  }
-
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .navegacion-header {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .navegacion-header button {
-    padding: 6px 10px;
-    font-size: 13px;
-  }
-
-  .topbar-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 8px;
-  }
-
-  .nombre-empresa {
-    font-size: 28px;
-  }
-
-  .logo-titulo {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo-titulo img {
-    height: 55px;
-  }
-
-  .carousel-inner img {
-    height: 180px;
-    object-fit: cover;
-  }
-
-  .cta-contenido h2,
-  #galeria h2,
-  #servicios h2 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .cta-contenido p,
-  .trabajo-card p {
-    font-size: 14px;
-  }
-
-  .trabajo-card h3 {
-    font-size: 16px;
-  }
-
-  .trabajos-grid {
-    grid-template-columns: 1fr;
-    padding: 20px 10px;
-  }
-}
-@media (max-width: 576px) {
-  .sobre-texto {
-    padding: 0 15px;
-    box-sizing: border-box;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    max-width: 100%;
-  }
-
-  .card-sobre {
-    padding: 20px 10px;
-  }
-
-  .contenedor-sobre {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sobre-img img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px auto;
-  }
-
-  .sobre-texto h2 {
-    font-size: 22px;
-  }
-
-  .sobre-texto p {
-    font-size: 15px;
-    line-height: 1.5;
-  }
+body {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
 }
 
+h1, h2, h3 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
 
+.nombre-empresa {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
 
+.cta-contenido h2,
+.sobre-texto h2,
+#galeria h2,
+#servicios h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
 
+.cta-contenido p,
+.sobre-texto p,
+.trabajo-card p,
+.intro-servicios {
+  font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+  line-height: 1.6;
+}
 
+.navegacion-header button {
+  font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+  padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 1.5rem);
+}
+
+footer p {
+  font-size: clamp(0.75rem, 2vw, 1rem);
+}
+
+.contacto-item p,
+.contacto-item a {
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+}
+
+.trabajo-card h3 {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+}
+
+.logo-titulo img {
+  height: clamp(50px, 10vw, 85px);
+}
+
+.carousel-inner img {
+  height: clamp(200px, 40vw, 500px);
+  object-fit: cover;
+}
+
+.trabajo-card img {
+  height: clamp(200px, 45vw, 500px);
+}
+
+/* Este archivo debe pegarse al final del CSS principal o enlazarse como un archivo aparte */
 
 
 
