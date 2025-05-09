@@ -861,6 +861,12 @@ html, body {
   line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+  header {
+    background-attachment: scroll !important;
+  }
+}
+
 
 
 
