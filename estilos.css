@@ -798,11 +798,18 @@ html, body {
   }
 
 @media (max-width: 768px) {
+  #carouselExampleIndicators {
+    margin: 0 auto;
+    padding: 0 10px; /* espacio a los lados */
+    box-sizing: border-box;
+  }
+
   .carousel-inner img {
-    height: auto !important;
-    max-height: 250px !important;
-    width: 100% !important;
-    object-fit: contain;
+    width: 100%;
+    max-width: 100%;
+    max-height: 400px; /* aumentamos el tamaño */
+    object-fit: cover; /* mantiene estética */
+    border-radius: 12px;
   }
 }
 
