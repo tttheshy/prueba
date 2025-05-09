@@ -815,6 +815,43 @@ header h1 {
   }
 }
 
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.sobre-nosotros, .card-sobre, .contenedor-sobre {
+  padding: 20px !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contenedor-sobre {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sobre-texto {
+  min-width: auto;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.sobre-texto h2 {
+  font-size: clamp(20px, 6vw, 32px);
+  text-align: center;
+}
+
+.sobre-texto p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
 
 
 
